@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Intro section -->
+<section id="intro">
+	<div class="container">
+		<h1>Github Profile</h1>
+		<p>Welcome to my Github profile page! Here you'll find information about my skills, projects and certifications.</p>
+	</div>
+</section>
+
+<!-- Skills section -->
+<section id="skills">
+	<div class="container">
+		<h2>Skills</h2>
+		<ul>
+            <li><strong>Programming Languages:</strong> Java, Python, C++</li>
+            <li><strong>Mobile Platform:</strong> Responsive Web Applications, Bootstrap</li>
+            <li><strong>Database:</strong> MySQL, DynamoDB</li>
+            <li><strong>Cloud Computing:</strong> AWS, API Gateway, Lambda, EC2, S3, CodeBuild, CodePipeline, Step Functions, EMR, Glue, Athena</li>
+            <li><strong>Front End and Web:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Back End:</strong> Java, Python, C++, REST APIs, RESTful web services, AWS Services, Spring Boot</li>
+            <li><strong>Testing and QA:</strong> Jira, software testing, SDLC, smoke testing, unit testing, functional testing, requirement analysis, sprint planning, agile methodologies, test plan design, test driven development, deployment testing, quality assurance, Bugzilla, scrum</li>
+		</ul>
+	</div>
+</section>
+
+<!-- Projects section -->
+<section id="projects">
+	<div class="container">
+		<h2>Projects</h2>
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">Book Store Management </h5>
+				<p class="card-text">Facilitates the user in maintaining and managing stocks of books. User can enter the shop as a staff or as a customer and update the library. User feedbacks are also taken on various books. Various data structures such as lists, arrays were used in the implementation. This application speeds up the working of purchasing of books by its efficient way of reserving books and by keeping track of various books.</p>
+				<!-- <a href="#" class="btn btn-primary">View project</a> -->
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">AWS-Auto Scaling - A responsive web application that scales the instances automatically based on traffic</h5>
+				<p class="card-text">A web application hosted on AWS with load balancing and auto scaling to scale up or scale down the number of instances of server based the number of users.</p>
+				<!-- <a href="#" class="btn btn-primary">View project</a> -->
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">Chat Server-Multiple Client Web based Chat Application</h5>
+				<p class="card-text">A multithread multi-client chat application features like login, search, and user status. Developed mobile ready web client for chatting using HTML , CSS, Bootstrap, JavaScript and Ajax in the front end and Java, MySQL as backend.</p>
+				<!-- <a href="#" class="btn btn-primary">View project</a> -->
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Certifications section -->
+<section id="certifications">
+	<div class="container">
+		<h2>Certifications</h2>
+		<ul>
+            <li><strong>AWS Certified Cloud Practitioner-2022</strong></li>
+            <li><strong>Udemy - Ultimate AWS Certified Cloud Practitioner-2022</strong> - <a href="https://www.udemy.com/certificate/UC-b8529f55-17ad-40ee-9de0-9f62a497a072/">Certification link</a></li>
+            <li><strong>Udemy - MasterClass Software Testing with Jira & Agile -Be a QA Lead 2023</strong> - <a href="https://www.udemy.com/certificate/UC-920e0152-1ad6-4392-ab70-1b18f86436d3/">Certification link</a></li>
+		</ul>
+	</div>
+</section>
+
+<!-- JavaScript for smooth scrolling -->
+<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 800, function(){
+					window.location.hash = hash;
+				});
+			}
+		});
+	});
+</script>
+
+</body>
+</html>
